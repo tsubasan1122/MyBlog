@@ -6,3 +6,4 @@ class Message < ApplicationRecord
     validates :temperature, presence: true
     validates :money, presence: true
 end
+
