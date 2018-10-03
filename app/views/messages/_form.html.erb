@@ -1,3 +1,5 @@
+
+
 <%= form_for(message) do |f| %>
   <% if message.errors.any? %>
     <div id="error_explanation">
@@ -24,7 +26,18 @@
     <%= f.label :name %>
     <%= f.text_area :name %>
   </div>
-
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :temperature %>
+    <%= f.number_field :temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :money %>
+    <%= f.number_field :money %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -13,6 +13,19 @@
   <strong>Name:</strong>
   <%= @message.name %>
 </P>
+<P>
+  <strong>Weight:</strong>
+  <%= @message.weight %>
+</P>
+<P>
+  <strong>Temperature:</strong>
+  <%= @message.temperature %>
+</P>
+<P>
+  <strong>Money:</strong>
+  <%= @message.money %>
+</P>
 
 <%= link_to 'Edit', edit_message_path(@message) %> |
 <%= link_to 'Back', messages_path %>
+
